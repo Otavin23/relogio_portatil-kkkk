@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>698</width>
+    <height>542</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMenuBar{
+	background-color: rgb(36, 41, 46);
+	color: rgb(167, 169, 171);
+	
+	font-size: 15px;
+	font-family:Arial,Helvetica,sans-serif;
+
+	padding-left: 20px;
+	padding-top: 10px;
+
+	border: none;
+	
+}
+QMenu{
+	border: none;
+	background-color: white;
+	color: black;
+	border: 1px solid white;
+	text-decoration: none;
+	list-style: none;
+	font-family:Arial,Helvetica,sans-serif;
+	font-size: 10px;
+	
+	Width: 200px;
+	Height: 100px;
+}
+QMenu,actionSalvar{
+	border-bottom: 1px solid black;
+	font-size: 16px;
+	font-family:Arial,Helvetica,sans-serif;
+}
+QAction,{
+	border: 1px solid black;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>698</width>
+     <height>42</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>36</height>
+    </size>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionSalvar"/>
+    <addaction name="actionAbrir"/>
+   </widget>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>Edit</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuView">
+    <property name="title">
+     <string>View</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuRepository">
+    <property name="title">
+     <string>Repository</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuBrancg">
+    <property name="title">
+     <string>Branch</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuEdit"/>
+   <addaction name="menuView"/>
+   <addaction name="menuRepository"/>
+   <addaction name="menuBrancg"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionSalvar">
+   <property name="text">
+    <string>Salvar</string>
+   </property>
+  </action>
+  <action name="actionAbrir">
+   <property name="text">
+    <string>Abrir</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="../../Documents/adada.qrc"/>
+ </resources>
+ <connections/>
+</ui>
